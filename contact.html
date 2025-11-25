@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Hilmi Younes pour vos projets de développement">
+    <title>Contact - Hilmi Younes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">Hilmi Younes</h1>
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="nav-link">Accueil</a></li>
+                        <li><a href="apropos.html" class="nav-link">À propos</a></li>
+                        <li><a href="projets.html" class="nav-link">Projets</a></li>
+                        <li><a href="competences.html" class="nav-link">Compétences</a></li>
+                        <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h2>Me contacter</h2>
+                <p class="page-subtitle">N'hésitez pas à me faire part de vos projets ou opportunités</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <!-- Informations de contact -->
+                    <aside class="contact-info">
+                        <h3>Coordonnées</h3>
+                        <article class="contact-item">
+                            <h4>Email</h4>
+                            <p>hilmi020499@gmail.com</p>
+                        </article>
+                        <article class="contact-item">
+                            <h4>Téléphone</h4>
+                            <p>+32 494 77 04 83</p>
+                        </article>
+                        <article class="contact-item">
+                            <h4>Localisation</h4>
+                            <p>Charleroi, Belgique</p>
+                        </article>
+                        <article class="contact-item">
+                            <h4>Disponibilité</h4>
+                            <p>Du lundi au vendredi<br>9h00 - 17h00</p>
+                        </article>
+                    </aside>
+
+                    <!-- Formulaire de contact -->
+                    <div class="contact-form-container">
+                        <h3>Envoyez-moi un message</h3>
+                        <form action="#" method="post" class="contact-form">
+                            <!-- Champ texte : Nom -->
+                            <div class="form-group">
+                                <label for="nom">Nom complet <span class="required">*</span></label>
+                                <input 
+                                    type="text" 
+                                    id="nom" 
+                                    name="nom" 
+                                    placeholder="Entrez votre nom complet" 
+                                    required>
+                            </div>
+
+                            <!-- Champ email -->
+                            <div class="form-group">
+                                <label for="email">Adresse email <span class="required">*</span></label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    placeholder="votre.email@example.com" 
+                                    required>
+                            </div>
+
+                            <!-- Champ téléphone -->
+                            <div class="form-group">
+                                <label for="telephone">Téléphone</label>
+                                <input 
+                                    type="tel" 
+                                    id="telephone" 
+                                    name="telephone" 
+                                    placeholder="+32 123 45 67 89">
+                            </div>
+
+                            <!-- Champ select : Sujet -->
+                            <div class="form-group">
+                                <label for="sujet">Sujet de votre message <span class="required">*</span></label>
+                                <select id="sujet" name="sujet" required>
+                                    <option value="">Sélectionnez un sujet</option>
+                                    <option value="opportunite">Opportunité professionnelle</option>
+                                    <option value="projet">Collaboration sur un projet</option>
+                                    <option value="stage">Proposition de stage</option>
+                                    <option value="question">Question technique</option>
+                                    <option value="autre">Autre</option>
+                                </select>
+                            </div>
+
+                            <!-- Champ date : Date souhaitée de réponse -->
+                            <div class="form-group">
+                                <label for="date-reponse">Date souhaitée pour une réponse</label>
+                                <input 
+                                    type="date" 
+                                    id="date-reponse" 
+                                    name="date-reponse">
+                            </div>
+
+                            <!-- Radio buttons : Priorité -->
+                            <div class="form-group">
+                                <label>Priorité du message <span class="required">*</span></label>
+                                <div class="radio-group">
+                                    <div class="radio-item">
+                                        <input 
+                                            type="radio" 
+                                            id="priorite-basse" 
+                                            name="priorite" 
+                                            value="basse" 
+                                            required>
+                                        <label for="priorite-basse">Basse</label>
+                                    </div>
+                                    <div class="radio-item">
+                                        <input 
+                                            type="radio" 
+                                            id="priorite-normale" 
+                                            name="priorite" 
+                                            value="normale" 
+                                            checked 
+                                            required>
+                                        <label for="priorite-normale">Normale</label>
+                                    </div>
+                                    <div class="radio-item">
+                                        <input 
+                                            type="radio" 
+                                            id="priorite-haute" 
+                                            name="priorite" 
+                                            value="haute" 
+                                            required>
+                                        <label for="priorite-haute">Haute</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Textarea : Message -->
+                            <div class="form-group">
+                                <label for="message">Votre message <span class="required">*</span></label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    rows="6" 
+                                    placeholder="Décrivez votre demande en détail..." 
+                                    required></textarea>
+                            </div>
+
+                            <!-- Checkboxes : Options supplémentaires -->
+                            <div class="form-group">
+                                <label>Options</label>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input 
+                                            type="checkbox" 
+                                            id="newsletter" 
+                                            name="newsletter" 
+                                            value="oui">
+                                        <label for="newsletter">Je souhaite recevoir des actualités sur vos projets</label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input 
+                                            type="checkbox" 
+                                            id="copie" 
+                                            name="copie" 
+                                            value="oui" 
+                                            checked>
+                                        <label for="copie">Recevoir une copie du message par email</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Bouton de soumission -->
+                            <div class="form-group">
+                                <button type="submit" class="btn-submit">Envoyer le message</button>
+                            </div>
+
+                            <p class="form-note"><span class="required">*</span> Champs obligatoires</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="contact-alternative">
+            <div class="container">
+                <h3>Autres moyens de me contacter</h3>
+                <p>Vous pouvez également me retrouver sur LinkedIn ou consulter mes projets sur GitHub.</p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Hilmi Younes - Étudiant à l'IETCPS</p>
+            <p>Portfolio créé dans le cadre du cours Web principes de base</p>
+        </div>
+    </footer>
+</body>
+</html>
